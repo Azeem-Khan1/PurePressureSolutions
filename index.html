@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Pure Pressure Solutionss</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- navbar -->
+            <nav id="navbar">
+                <div class="logo">
+                    <img
+                        src="assets/img/PurePressureSolutionss-logo.png"
+                        alt="PurePressureSolutionss-logo"
+                    />
+                </div>
+                <ul>
+                    <li><a href="#book">Book Now!</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- header / title page / hero section -->
+            <header id="header" class="header">
+                <h1>Pure Pressure Solutionss</h1>
+                <p>
+                    Fostering a cleaner, healthier environment through efficient
+                    waste management and inspiring sustainability.
+                </p>
+                <a href="#book" class="actionButton">Book Now</a>
+            </header>
+
+            <!-- about section -->
+            <div class="about-container" id="about">
+                <h2 class="missionHeading">About Us</h2>
+                <p>
+                    Pure Pressure Solutionss is a pressure washing service
+                    committed to creating a cleaner, healthier living
+                    environment for all. Our mission is to efficiently manage
+                    waste, inspire sustainable practices, and contribute to a
+                    community where cleanliness and well-being thrive.
+                </p>
+            </div>
+
+            <!-- booking form -->
+            <div class="book-container" id="book">
+                <h2>Book Now!</h2>
+
+                <form action="" class="bookForm">
+                    <!-- Name -->
+                    <fieldset id="name">
+                        <h3 class="field-description">Full Name</h3>
+                        <legend>Name</legend>
+                        <input type="text" id="nameInp" />
+                    </fieldset>
+                    <!-- Address -->
+                    <fieldset id="address">
+                        <h3 class="field-description">Full Address</h3>
+                        <legend>Address</legend>
+                        <input type="text" id="addressInp" />
+                    </fieldset>
+                    <!-- Phone Number -->
+                    <fieldset id="phone">
+                        <legend>Phone Number</legend>
+                        <input
+                            type="tel"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            id="phoneNumberInp"
+                        />
+                    </fieldset>
+                    <!-- Trash Day -->
+                    <fieldset id="trash">
+                        <legend>Trash Day</legend>
+                        <label class="trashDaySelect">
+                            <input type="radio" id="trashInp" value="Sunday" />
+                            Sunday
+                        </label>
+                        <label class="trashDaySelect">
+                            <input type="radio" id="trashInp" value="Monday" />
+                            Monday
+                        </label>
+                        <label class="trashDaySelect">
+                            <input type="radio" id="trashInp" value="Tuesday" />
+                            Tuesday
+                        </label>
+                        <label class="trashDaySelect">
+                            <input
+                                type="radio"
+                                id="trashInp"
+                                value="Wednesday"
+                            />
+                            Wednesday
+                        </label>
+                        <label class="trashDaySelect">
+                            <input
+                                type="radio"
+                                id="trashInp"
+                                value="Thursday"
+                            />
+                            Thursday
+                        </label>
+                        <label class="trashDaySelect">
+                            <input type="radio" id="trashInp" value="Friday" />
+                            Friday
+                        </label>
+                        <label class="trashDaySelect">
+                            <input
+                                type="radio"
+                                id="trashInp"
+                                value="Saturday"
+                            />
+                            Saturday
+                        </label>
+                    </fieldset>
+                    <!-- recurring customer? -->
+                    <fieldset id="recur">
+                        <legend>Recurring Customer?</legend>
+                        <h3 class="field-description">
+                            Have you done business with Pure Pressure Solutionss
+                            in the past?
+                        </h3>
+                        <label class="trashDaySelect">
+                            <input
+                                type="radio"
+                                class="recurInp"
+                                id="recurYes"
+                                value="Yes"
+                            />
+                            Yes
+                        </label>
+                        <label class="trashDaySelect">
+                            <input
+                                type="radio"
+                                class="recurInp"
+                                id="recurNo"
+                                value="No"
+                            />
+                            No
+                        </label>
+                    </fieldset>
+                    <!-- client statement -->
+                    <fieldset id="statement">
+                        <legend>Client Statement</legend>
+                        <h3 class="field-description">
+                            Briefly describe what service you would like us to
+                            do (3-4 sentences)
+                        </h3>
+                        <textarea id="clientStatement"></textarea>
+                    </fieldset>
+                </form>
+            </div>
+
+            <!-- contact section -->
+            <div class="contact-container" id="contact">
+                <h2 class="contact-heading">Contact</h2>
+                <a
+                    class="button"
+                    id="contactEmailBTN"
+                    href="mailto:email@email.de"
+                    >Email</a
+                >
+            </div>
+        </div>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+</html>
