@@ -4,166 +4,473 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="assets/css/style.css" />
-        <title>Pure Pressure Solutionss</title>
+        <!-- Need these for Bootstrap to work (Booking form) -->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"
+        />
+        <!-- Need these for JS to work (Booking form) -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"
+            type="text/javascript"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"
+            type="text/javascript"
+        ></script>
+        <title>Pure Pressure Solutionss | A Clean Company</title>
     </head>
     <body>
         <div id="wrapper">
             <!-- navbar -->
-            <nav id="navbar">
-                <div class="logo">
+            <div class="navbar">
+                <nav class="yes">
+                    <div class="navsection1">
+                        <img
+                            class="logo"
+                            src="assets/img/PurePressureSolutionss-logo.png"
+                            alt="PurePressureSolutionss-logo"
+                        />
+                        <h4 class="nav-text">Pure Pressure Solutionss</h4>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent"
+                        aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                        >
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                            />
+                        </svg>
+                    </button>
+                </nav>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="text-container">
+                        <ul>
+                            <li>
+                                <a class="text-muted" href="#book">Book Now</a>
+                            </li>
+                            <li>
+                                <a class="text-muted" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="text-muted" href="#contact"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- </div>
+            <nav style="display: flex" id="navbar">
+                <div class="logo-container">
                     <img
+                        class="logo"
                         src="assets/img/PurePressureSolutionss-logo.png"
                         alt="PurePressureSolutionss-logo"
                     />
                 </div>
                 <ul>
-                    <li><a href="#book">Book Now!</a></li>
+                    <li><a href="#book">Book Now</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
+            </nav> -->
             <!-- header / title page / hero section -->
-            <header id="header" class="header">
-                <h1>Pure Pressure Solutionss</h1>
-                <p>
-                    Fostering a cleaner, healthier environment through efficient
-                    waste management and inspiring sustainability.
-                </p>
-                <a href="#book" class="actionButton">Book Now</a>
-            </header>
+            <section class="full-container">
+                <header id="header" class="header section">
+                    <h1>Pure Pressure Solutionss</h1>
+                    <p>
+                        Fostering a cleaner, healthier environment through
+                        efficient waste management and inspiring sustainability.
+                    </p>
+                    <a href="#book" class="actionButton">Book Now</a>
+                </header>
 
-            <!-- about section -->
-            <div class="about-container" id="about">
-                <h2 class="missionHeading">About Us</h2>
-                <p>
-                    Pure Pressure Solutionss is a pressure washing service
-                    committed to creating a cleaner, healthier living
-                    environment for all. Our mission is to efficiently manage
-                    waste, inspire sustainable practices, and contribute to a
-                    community where cleanliness and well-being thrive.
-                </p>
-            </div>
+                <!-- about section -->
+                <div class="about-container section" id="about">
+                    <h2 class="missionHeading">About Us</h2>
+                    <p>
+                        Pure Pressure Solutionss is a pressure washing service
+                        committed to creating a cleaner, healthier living
+                        environment for all. Our mission is to efficiently
+                        manage waste, inspire sustainable practices, and
+                        contribute to a community where cleanliness and
+                        well-being thrive.
+                    </p>
+                </div>
 
-            <!-- booking form -->
-            <div class="book-container" id="book">
-                <h2>Book Now!</h2>
+                <!-- booking form -->
+                <div class="book-container section" id="book">
+                    <h2>Book Now</h2>
 
-                <form action="" class="bookForm">
-                    <!-- Name -->
-                    <fieldset id="name">
-                        <h3 class="field-description">Full Name</h3>
-                        <legend>Name</legend>
-                        <input type="text" id="nameInp" />
-                    </fieldset>
-                    <!-- Address -->
-                    <fieldset id="address">
-                        <h3 class="field-description">Full Address</h3>
-                        <legend>Address</legend>
-                        <input type="text" id="addressInp" />
-                    </fieldset>
-                    <!-- Phone Number -->
-                    <fieldset id="phone">
-                        <legend>Phone Number</legend>
-                        <input
-                            type="tel"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                            id="phoneNumberInp"
-                        />
-                    </fieldset>
-                    <!-- Trash Day -->
-                    <fieldset id="trash">
-                        <legend>Trash Day</legend>
-                        <label class="trashDaySelect">
-                            <input type="radio" id="trashInp" value="Sunday" />
-                            Sunday
-                        </label>
-                        <label class="trashDaySelect">
-                            <input type="radio" id="trashInp" value="Monday" />
-                            Monday
-                        </label>
-                        <label class="trashDaySelect">
-                            <input type="radio" id="trashInp" value="Tuesday" />
-                            Tuesday
-                        </label>
-                        <label class="trashDaySelect">
-                            <input
-                                type="radio"
-                                id="trashInp"
-                                value="Wednesday"
-                            />
-                            Wednesday
-                        </label>
-                        <label class="trashDaySelect">
-                            <input
-                                type="radio"
-                                id="trashInp"
-                                value="Thursday"
-                            />
-                            Thursday
-                        </label>
-                        <label class="trashDaySelect">
-                            <input type="radio" id="trashInp" value="Friday" />
-                            Friday
-                        </label>
-                        <label class="trashDaySelect">
-                            <input
-                                type="radio"
-                                id="trashInp"
-                                value="Saturday"
-                            />
-                            Saturday
-                        </label>
-                    </fieldset>
-                    <!-- recurring customer? -->
-                    <fieldset id="recur">
-                        <legend>Recurring Customer?</legend>
-                        <h3 class="field-description">
-                            Have you done business with Pure Pressure Solutionss
-                            in the past?
-                        </h3>
-                        <label class="trashDaySelect">
-                            <input
-                                type="radio"
-                                class="recurInp"
-                                id="recurYes"
-                                value="Yes"
-                            />
-                            Yes
-                        </label>
-                        <label class="trashDaySelect">
-                            <input
-                                type="radio"
-                                class="recurInp"
-                                id="recurNo"
-                                value="No"
-                            />
-                            No
-                        </label>
-                    </fieldset>
-                    <!-- client statement -->
-                    <fieldset id="statement">
-                        <legend>Client Statement</legend>
-                        <h3 class="field-description">
-                            Briefly describe what service you would like us to
-                            do (3-4 sentences)
-                        </h3>
-                        <textarea id="clientStatement"></textarea>
-                    </fieldset>
-                </form>
-            </div>
+                    <form
+                        class="well form-horizontal"
+                        action=" "
+                        method="post"
+                        id="contact_form"
+                    >
+                        <fieldset>
+                            <!-- Form Name -->
+                            <legend>Book an Appointment Today!</legend>
 
-            <!-- contact section -->
-            <div class="contact-container" id="contact">
-                <h2 class="contact-heading">Contact</h2>
-                <a
-                    class="button"
-                    id="contactEmailBTN"
-                    href="mailto:email@email.de"
-                    >Email</a
-                >
-            </div>
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >First Name</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-user"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="first_name"
+                                            placeholder="First Name"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >Last Name</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-user"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="last_name"
+                                            placeholder="Last Name"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >E-Mail</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-envelope"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="email"
+                                            placeholder="example@email.com"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >Phone #</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-earphone"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="phone"
+                                            placeholder="ex. (123) 456-7890"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >Address</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-home"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="address"
+                                            placeholder="1234 Example Road"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >City</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-home"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="city"
+                                            placeholder="City"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Select Basic -->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >State</label
+                                >
+                                <div class="col-md-4 selectContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-list"
+                                            ></i
+                                        ></span>
+                                        <select
+                                            name="state"
+                                            class="form-control selectpicker"
+                                        >
+                                            <option value=" ">
+                                                Please select your state
+                                            </option>
+                                            <option>Alabama</option>
+                                            <option>Alaska</option>
+                                            <option>Arizona</option>
+                                            <option>Arkansas</option>
+                                            <option>California</option>
+                                            <option>Colorado</option>
+                                            <option>Connecticut</option>
+                                            <option>Delaware</option>
+                                            <option>
+                                                District of Columbia
+                                            </option>
+                                            <option>Florida</option>
+                                            <option>Georgia</option>
+                                            <option>Hawaii</option>
+                                            <option>daho</option>
+                                            <option>Illinois</option>
+                                            <option>Indiana</option>
+                                            <option>Iowa</option>
+                                            <option>Kansas</option>
+                                            <option>Kentucky</option>
+                                            <option>Louisiana</option>
+                                            <option>Maine</option>
+                                            <option>Maryland</option>
+                                            <option>Mass</option>
+                                            <option>Michigan</option>
+                                            <option>Minnesota</option>
+                                            <option>Mississippi</option>
+                                            <option>Missouri</option>
+                                            <option>Montana</option>
+                                            <option>Nebraska</option>
+                                            <option>Nevada</option>
+                                            <option>New Hampshire</option>
+                                            <option>New Jersey</option>
+                                            <option>New Mexico</option>
+                                            <option>New York</option>
+                                            <option>North Carolina</option>
+                                            <option>North Dakota</option>
+                                            <option>Ohio</option>
+                                            <option>Oklahoma</option>
+                                            <option>Oregon</option>
+                                            <option>Pennsylvania</option>
+                                            <option>Rhode Island</option>
+                                            <option>South Carolina</option>
+                                            <option>South Dakota</option>
+                                            <option>Tennessee</option>
+                                            <option>Texas</option>
+                                            <option>Uttah</option>
+                                            <option>Vermont</option>
+                                            <option>Virginia</option>
+                                            <option>Washington</option>
+                                            <option>West Virginia</option>
+                                            <option>Wisconsin</option>
+                                            <option>Wyoming</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text input-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >Zip Code</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-globe"
+                                            ></i
+                                        ></span>
+                                        <input
+                                            name="zip"
+                                            placeholder="Zip Code"
+                                            class="form-control"
+                                            type="text"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- radio checks -->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >Have you hired us before?</label
+                                >
+                                <div class="col-md-4">
+                                    <div class="radio">
+                                        <label>
+                                            <input
+                                                type="radio"
+                                                name="hosting"
+                                                value="yes"
+                                            />
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label>
+                                            <input
+                                                type="radio"
+                                                name="hosting"
+                                                value="no"
+                                            />
+                                            No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Text area -->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"
+                                    >Description (3-4 sentences)</label
+                                >
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"
+                                            ><i
+                                                class="glyphicon glyphicon-pencil"
+                                            ></i
+                                        ></span>
+                                        <textarea
+                                            class="form-control"
+                                            name="comment"
+                                            placeholder="Describe what service you want"
+                                        ></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Success message -->
+                            <div
+                                class="alert alert-success"
+                                role="alert"
+                                id="success_message"
+                            >
+                                Success
+                                <i class="glyphicon glyphicon-thumbs-up"></i>
+                                Thanks for contacting us, we will get back to
+                                you shortly.
+                            </div>
+
+                            <!-- Button -->
+                            <div class="form-group">
+                                <label class="col-md-4 control-label"></label>
+                                <div class="col-md-4">
+                                    <button
+                                        type="submit"
+                                        class="btn btn-warning"
+                                    >
+                                        Send
+                                        <span
+                                            class="glyphicon glyphicon-send"
+                                        ></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+
+                <!-- contact section -->
+                <div class="contact-container section" id="contact">
+                    <h2 class="contact-heading">Contact</h2>
+                    <a
+                        class="button"
+                        id="contactEmailBTN"
+                        href="mailto:email@email.de"
+                        >Email</a
+                    >
+                </div>
+            </section>
         </div>
-
         <script src="assets/js/script.js"></script>
     </body>
 </html>
