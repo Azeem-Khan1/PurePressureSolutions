@@ -3,7 +3,6 @@
 $(document).ready(function () {
     $("#contact_form")
         .bootstrapValidator({
-            // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
             feedbackIcons: {
                 valid: "glyphicon glyphicon-ok",
                 invalid: "glyphicon glyphicon-remove",
@@ -110,3 +109,33 @@ $(document).ready(function () {
             $("#success_message").slideDown({ opacity: "show" }, "slow"); // Do something ..
         });
 });
+
+
+// Hiding the mobile navbar other than using the toggle button
+
+document.addEventListener("DOMContentLoaded", function () {
+    var navbar = document.querySelector('.navbar');
+    var collapseDiv = document.querySelector('.collapse');
+
+    // This allows user to "click out of" the nav dropdown
+    document.addEventListener('click', function (event) {
+        var isClickInsideNavbar = navbar.contains(event.target);
+
+        if (!isClickInsideNavbar && collapseDiv.classList.contains('in')) {
+            // Check if the collapse div is currently expanded
+            document.querySelector(".navbar-toggler").click();
+        }
+    });
+
+    const navItems = document.querySelectorAll('.nav-item');
+    // Hide nav dropdown after using it
+    navItems.forEach((navItem) => {
+        navItem.addEventListener('click', () => {
+            if (collapseDiv.classList.contains('in')) {
+                document.querySelector(".navbar-toggler").click();
+            }
+        });
+    });
+
+});
+            
